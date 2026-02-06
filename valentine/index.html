@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love ❤️</title>
+
+  <!-- CSS LINK (IMPORTANT) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<div id="heart-layer"></div>
+<body>
+
+<div class="train-track">
+  <div class="train-text">
+    ❤️ I LOVE YOU ❤️ Preethi ❤️ 
+  </div>
+</div>
+
+<!-- LOVEABLE WORDS SECTION -->
+<div class="love-section">
+  <h1 class="love-title">💕 My Promises & Love For You 💕</h1>
+  <div class="promises-container">
+    <div class="promise-box">
+      <p>I promise to love you unconditionally,<br>with all my heart, now and forever.</p>
+    </div>
+    <div class="promise-box">
+      <p>Every moment with you is a treasure,<br>and every day, I fall more in love.</p>
+    </div>
+    <div class="promise-box">
+      <p>You are my sunshine, my love, my life,<br>my everything that makes me complete.</p>
+    </div>
+    <div class="promise-box">
+      <p>I promise to be there for you always,<br>through thick and thin, forever yours.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modules">
+  <div class="promise-box">
+  <div class="card" data-day="7" onclick="handleClick(7)"><span class="emoji">🌹</span><span class="text">Rose</span></div>
+  </div>
+  <div class="promise-box">
+  <div class="card" data-day="8" onclick="handleClick(8)"><span class="emoji">💍</span><span class="text">Propose</span></div>
+  </div>
+  <div class="promise-box">
+  <div class="card" data-day="9" onclick="handleClick(9)"><span class="emoji">🍫</span><span class="text">Chocolate</span></div>
+  </div>
+  <div class="promise-box">
+  <div class="card" data-day="10" onclick="handleClick(10)"><span class="emoji">🧸</span><span class="text">Teddy</span></div>
+  </div>
+  <div class="promise-box">
+  <div class="card" data-day="11" onclick="handleClick(11)"><span class="emoji">🤝</span><span class="text">Promise</span></div>
+  </div>
+  <div class="promise-box">
+  <div class="card" data-day="12" onclick="handleClick(12)"><span class="emoji">🤍</span><span class="text">Hug</span></div>
+  </div>
+  <div class="promise-box">
+  <div class="card" data-day="13" onclick="handleClick(13)"><span class="emoji">😘</span><span class="text">Kiss</span></div>
+  </div>
+  <div class="promise-box">
+  <div class="card" data-day="14" onclick="handleClick(14)"><span class="emoji">❤️</span><span class="text">Valentine</span></div>
+  </div>
+</div>
+
+<!-- AUDIO -->
+<audio id="bgm" preload="auto" loop playsinline>
+  <source src="asset/love.mp3" type="audio/mpeg">
+</audio>
+
+
+<div id="tapNote" style="display:none;">💖 Tap anywhere to start the music 💖</div>
+
+<div id="popup" onclick="closePopup()">
+  <div id="popupText"></div>
+</div>
+
+<!-- LOVE QUESTION POPUP -->
+<div id="questionPopup" onclick="if(event.target === this) closePopup()">
+  <div id="questionContainer" onclick="event.stopPropagation()">
+    <h2 id="questionText">Will you love me? 💕</h2>
+    <div id="buttonContainer">
+      <button id="yesBtn" class="love-btn yes-btn" onclick="event.stopPropagation(); handleYes()">YES ❤️</button>
+      <button id="noBtn" class="love-btn no-btn" onmouseover="moveNoButton()" onclick="event.stopPropagation(); moveNoButton()">NO 😢</button>
+    </div>
+  </div>
+</div>
+
+<!-- HEART-SHAPED POPUP -->
+<div id="heartPopup" onclick="closePopup()">
+  <div id="heartContainer">
+    <div id="heartDay"></div>
+    <div id="heartQuote"></div>
+  </div>
+</div>
+<div class="train-track">
+  <div class="train-text">
+    ❤️❤️❤️❤️❤️Buchuuuuu maa ❤️❤️❤️❤️❤️  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
